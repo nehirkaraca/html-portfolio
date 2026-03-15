@@ -1,0 +1,584 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*MY CODE*/
+
+* {
+    text-decoration: none;
+}
+
+body {
+ 
+}
+main {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    z-index: 1000; 
+}
+
+header .header-brand {
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+ 
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+
+}
+
+header nav ul li a {
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+header .header-cases {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        float: left;
+        margin: 20px 0px 0px 20px;
+    }
+     
+    header nav ul li a {
+        line-height: 60px;
+    }
+    header .header-cases {
+        display: block;
+        font-family: "Trebuchet MS";
+        font-size: 16px;
+        color: #111;
+        text-transform: uppercase;
+        border: 1px solid #111;
+        line-height: 40px;
+        float: right;
+        margin-right: 40px;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+}
+
+
+
+/*INDEX*/
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(img/banner.jpg);
+    background-rep: no-repeat;
+    background-position: border-top;
+    background-size: cover;
+    display: table;
+
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.index-banner h2 {
+    font-family: arial;
+    font-size: 56px;
+    color: #fff;
+    line-height: 70px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+
+}
+
+.index-banner h1 {
+    font-family: "Trebuchet MS";
+    font-size: 28px;
+    color: #fff;
+    font-style: italic;
+    line-height: 40px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+
+}
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+.index-links div h3 {
+    font-family: "Trebuchet MS";
+    font-size: 28px;
+    color: #111;
+    line-height: 100px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .index-banner h1 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+    }
+    .index-links {
+        overflow: hidden;
+    }
+    .index-links div {
+        margin: 16px 8px 0;
+        height: 230px;
+        float: left;
+    }
+
+    .index-boxlink-sq {
+        width: calc(25% - 20px) !important;
+    }
+
+    .index-boxlink-rect {
+        width: calc(50% - 20px) !important;
+    }
+
+    .index-links div h3 {
+        line-height: 230px;
+    }
+
+
+}
+/*FOOTER*/
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content; /* The width changes according to the items*/
+    float: left;
+    padding-left: 20px;
+}
+footer ul li {
+      display: block;
+      list-style:none;
+}
+footer ul li a {
+    font-family: arial;
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+}
+.footer-links-cases {
+    display: none;
+}
+.footer-links-cases a {
+
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.footer-links-cases p {
+    text-transform: uppercase;
+
+}
+.footer-sm {
+    width: 60px;
+    float: right;
+    text-align: center;
+}
+
+.git {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.ln {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .footer-links-cases {
+        display: block;
+    }
+    footer ul {
+        padding-left: 30px;
+    }
+    footer ul li p {
+        font-family: arial;
+        font-size: 20px;
+        color: #fff;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+}
+
+
+/* ABOUT ME PAGE */
+
+.nehir-img {
+    width: 100%;
+}
+.about-me-text h1 {
+    font-family: "Trebuchet MS";
+    font-size: 40px;
+    padding: 20px 0 5px 25px;
+    color: #111;
+    text-transform: uppercase;
+}
+.about-me-text p {
+    padding: 10px 25px;
+    font-family: arial;
+    font-size: 26px;
+    color: #111;
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .nehir-img {
+        width: 450px;
+        float: left;
+        padding: 0 20px;
+    }
+    .about-me-text h1 {
+        padding: 0 0 5px 25px;
+    }
+
+
+
+}
+
+/* SKILLS */
+
+
+.skills-left h1 {
+    font-family: "Trebuchet MS";
+    font-size: 32px;
+    line-height: 60px;
+    font-weight: 800;
+    padding-left: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.skills-left ul li {
+    font-family: "Trebuchet MS";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    padding-left: 16px;
+    list-style: none;
+    color: #fff;
+}
+
+
+
+.skills-right h1 {
+    font-family: "Trebuchet MS";
+    font-size: 32px;
+    line-height: 60px;
+    text-align: right;
+    font-weight: 800;
+    color: #111;
+    padding-right: 16px;
+    text-decoration: underline;
+    text-shadow:  0 1px 4px white;
+}
+
+.skills-right ul li {
+    font-family: "Trebuchet MS";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 16px;
+    list-style: none;
+    text-shadow:  2px 2px 5px white;
+}
+
+.skills-1 {
+    background-image: url("img/programming.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skills-2 {
+    background-image: url("img/data-structures.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skills-3 {
+    background-image: url("img/web-development.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skills-4 {
+    background-image: url("img/languages.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1000px){
+    .skills-left{
+        margin-bottom: 20px;
+    }
+    .skills-right{
+        margin-bottom: 20px;
+    }
+}
+
+/* CONTACT */
+
+.contact h1 {
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 60px;
+    text-transform: uppercase;
+
+}
+
+.contact-info {
+        margin-top: 20px;
+}
+
+.contact-info p {
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.contact ul li {
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 50px;
+    list-style: none;
+}
+.contact ul li a {
+    font-family: "Trebuchet MS";
+    font-size: 30px;
+    line-height: 100px;
+    color: #111;
+
+}
+
+/* PROJECTS */
+/* Slideshow container */
+#slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Slideshow image */
+#slideshow-container img {
+    width: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s, opacity 0.5s;
+    position: center;
+}
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+/* Caption container */
+#caption {
+  margin: 35px 0;
+  text-align: left;
+}
+
+/* Title styling */
+#caption h2 {
+    font-size: 32px;
+    font-family: "Trebuchet MS";
+    max-width: 500px;
+    margin: 20px 0;
+    color: #111;
+    text-decoration: underline;
+}
+
+/* Description styling */
+#caption p {
+    font-size: 22px;
+    color: #111;
+    line-height: 1.5;
+    margin: 20px 0;
+    font-family: arial;
+}
